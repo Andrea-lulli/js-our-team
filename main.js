@@ -49,20 +49,29 @@ const team = [
 
 let card = document.getElementById("card")
 
+
+
 for (let i = 0; i < team.length; i++) {
 
+  // stampa tutti gli oggetti dentro l'array
   console.log(team[i]);
 
+  //stampa solo i nomi 
   console.log(team[i].name);
+
+  //stampa solo i ruoli 
   console.log(team[i].role);
+
+  //stampa solo le stringhe delle img
   console.log(team[i].image);
 
-  card.innerHTML += `<div class="card col-3 m-2" >
-  <img src="/img/${team[i].image}" class="card-img-top" alt="...">
-  <div class="card-body text-center">
-    <p class="card-text">${team[i].name}</p>
-    <p class="card-text">${team[i].role}</p>
-  </div>
-</div>`
-
+  //stampa nel dom le 6 card con tutti gli oggetti
+  card.innerHTML += `
+  <div class="card col-3 m-3" >
+    <img src="/img/${team[i].image}" class="card-img-top" alt="...">
+    <div class="card-body text-center">
+      <p class="card-text"><strong>${team[i].name}</strong></p>
+      <p class="card-text">${team[i].role}</p>
+    </div>
+  </div>`
 }

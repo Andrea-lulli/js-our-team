@@ -1,9 +1,14 @@
+body{
+    background-color: rgb(223, 223, 209);
+}
+
+/* card */
 card>img {
     width: 100%;
 }
 
 #card {
-    width: 70%;
+    width: 1000%;
 }
 
 .card {
@@ -11,7 +16,15 @@ card>img {
 
 }
 
-.card-img,
+.card, .card-img,
 .card-img-top {
     border-radius: 0;
+}
+
+.card-text{
+    color: rgba(116,111,104,255) ;
+}
+
+.row{
+    gu: 0rem;
 }
