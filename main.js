@@ -46,3 +46,23 @@ const team = [
     image: 'barbara-ramos-graphic-designer.jpg',
   },
 ];
+
+let card = document.getElementById("card")
+
+for (let i = 0; i < team.length; i++) {
+
+  console.log(team[i]);
+
+  console.log(team[i].name);
+  console.log(team[i].role);
+  console.log(team[i].image);
+
+  card.innerHTML += `<div class="card col-3 m-2" >
+  <img src="/img/${team[i].image}" class="card-img-top" alt="...">
+  <div class="card-body text-center">
+    <p class="card-text">${team[i].name}</p>
+    <p class="card-text">${team[i].role}</p>
+  </div>
+</div>`
+
+}

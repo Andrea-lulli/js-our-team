@@ -1,0 +1,17 @@
+card>img {
+    width: 100%;
+}
+
+#card {
+    width: 70%;
+}
+
+.card {
+    border: 0px;
+
+}
+
+.card-img,
+.card-img-top {
+    border-radius: 0;
+}
